@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Current Weather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+  	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+	  <div class="frame-body">
+		<h1>Current Weather</h1>
+		<hr/>
+		<h3 id="location">Checking location... <i class="fa fa-spinner"></i></h3>
+		<h3><span id="temp-value"></span> &#176<span id="temp">C</span></h3>
+		<span id="weather"></span>
+		<img id="weather-icon" src="" />
+		<hr/>
+		<form id="location-input">
+		  <h3 class="location-input">Different location?</h3>
+		  <p class="location-input">
+			<label class="location-input">City</label>
+			<input type="text" placeholder="Type city..." id="new-city">
+			<span>Which city?</span>
+			<span>Wrong city name...</span>
+		  </p>
+		  <p class="location-input">
+			<label class="location-input">Country</label>
+			<input type="text" placeholder="Type country..." id="new-country">
+			<span>Wrong country name...</span>
+		  </p>
+		  <p>
+			<button id="submit" type="button"><i class="fa fa-sun-o"></i></button>
+		  </p>
+		</form>
+	  </div>
+	  <!--frame-body-->
+	</div>
+	<!--container-fluid-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://use.fontawesome.com/4c3a2e2c94.js"></script>
+    <script src="js/index.js"></script>
+  
+  </body>
+</html>
